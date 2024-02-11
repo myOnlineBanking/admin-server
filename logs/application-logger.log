@@ -1,0 +1,683 @@
+[30m2022-06-12 00:35:12,548[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.StartupInfoLogger[0;39m : Starting DemoApplication using Java 1.8.0_202 on DESKTOP-MFJBM3L with PID 8648 (C:\Users\werty\IdeaProjects\admin-server\target\classes started by werty in C:\Users\werty\IdeaProjects\admin-server)
+[30m2022-06-12 00:35:12,558[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.SpringApplication[0;39m : No active profile set, falling back to default profiles: default
+[30m2022-06-12 00:35:12,669[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.logging.DeferredLog[0;39m : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[30m2022-06-12 00:35:12,670[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.logging.DeferredLog[0;39m : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[30m2022-06-12 00:35:13,994[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[30m2022-06-12 00:35:14,058[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m : Finished Spring Data repository scanning in 58 ms. Found 1 MongoDB repository interfaces.
+[30m2022-06-12 00:35:14,769[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m : Tomcat initialized with port(s): 8080 (http)
+[30m2022-06-12 00:35:14,779[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Starting service [Tomcat]
+[30m2022-06-12 00:35:14,779[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Starting Servlet engine: [Apache Tomcat/9.0.50]
+[30m2022-06-12 00:35:14,875[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Initializing Spring embedded WebApplicationContext
+[30m2022-06-12 00:35:14,875[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m : Root WebApplicationContext: initialization completed in 2203 ms
+[30m2022-06-12 00:35:16,402[0;39m [31m[0;39m[33m WARN[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.context.support.AbstractApplicationContext[0;39m : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationController': Unsatisfied dependency expressed through field 'reservationService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationServiceImpl': Unsatisfied dependency expressed through field 'reservationRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reservationRepository' defined in com.example.demo.respositories.ReservationRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+[30m2022-06-12 00:35:16,406[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Stopping service [Tomcat]
+[30m2022-06-12 00:35:16,421[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener[0;39m : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[30m2022-06-12 00:35:16,448[0;39m [1;31m[0;39m[31mERROR[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.SpringApplication[0;39m : Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationController': Unsatisfied dependency expressed through field 'reservationService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationServiceImpl': Unsatisfied dependency expressed through field 'reservationRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reservationRepository' defined in com.example.demo.respositories.ReservationRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationServiceImpl': Unsatisfied dependency expressed through field 'reservationRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reservationRepository' defined in com.example.demo.respositories.ReservationRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reservationRepository' defined in com.example.demo.respositories.ReservationRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1434)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 52 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 62 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 76 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 90 common frames omitted
+Caused by: com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveAdditionalQueryParametersFromTxtRecords(DefaultDnsResolver.java:131)
+	at com.mongodb.ConnectionString.<init>(ConnectionString.java:381)
+	at org.springframework.boot.autoconfigure.mongo.MongoPropertiesClientSettingsBuilderCustomizer.applyHostAndPort(MongoPropertiesClientSettingsBuilderCustomizer.java:84)
+	at org.springframework.boot.autoconfigure.mongo.MongoPropertiesClientSettingsBuilderCustomizer.customize(MongoPropertiesClientSettingsBuilderCustomizer.java:54)
+	at org.springframework.boot.autoconfigure.mongo.MongoClientFactorySupport.customize(MongoClientFactorySupport.java:55)
+	at org.springframework.boot.autoconfigure.mongo.MongoClientFactorySupport.createMongoClient(MongoClientFactorySupport.java:49)
+	at org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration.mongo(MongoAutoConfiguration.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 91 common frames omitted
+Caused by: javax.naming.NameNotFoundException: DNS name not found [response code 3]
+	at com.sun.jndi.dns.DnsClient.checkResponseCode(DnsClient.java:660)
+	at com.sun.jndi.dns.DnsClient.isMatchResponse(DnsClient.java:578)
+	at com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:426)
+	at com.sun.jndi.dns.DnsClient.query(DnsClient.java:211)
+	at com.sun.jndi.dns.Resolver.query(Resolver.java:81)
+	at com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
+	at com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
+	at com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
+	at com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
+	at javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:142)
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveAdditionalQueryParametersFromTxtRecords(DefaultDnsResolver.java:114)
+	... 102 common frames omitted
+[30m2022-06-12 00:36:18,780[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.StartupInfoLogger[0;39m : Starting DemoApplication using Java 1.8.0_202 on DESKTOP-MFJBM3L with PID 15020 (C:\Users\werty\IdeaProjects\admin-server\target\classes started by werty in C:\Users\werty\IdeaProjects\admin-server)
+[30m2022-06-12 00:36:18,786[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.SpringApplication[0;39m : No active profile set, falling back to default profiles: default
+[30m2022-06-12 00:36:18,854[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.logging.DeferredLog[0;39m : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[30m2022-06-12 00:36:18,855[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.logging.DeferredLog[0;39m : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[30m2022-06-12 00:36:20,258[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[30m2022-06-12 00:36:20,314[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m : Finished Spring Data repository scanning in 51 ms. Found 1 MongoDB repository interfaces.
+[30m2022-06-12 00:36:21,036[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m : Tomcat initialized with port(s): 8080 (http)
+[30m2022-06-12 00:36:21,045[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Starting service [Tomcat]
+[30m2022-06-12 00:36:21,046[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Starting Servlet engine: [Apache Tomcat/9.0.50]
+[30m2022-06-12 00:36:21,135[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Initializing Spring embedded WebApplicationContext
+[30m2022-06-12 00:36:21,135[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m : Root WebApplicationContext: initialization completed in 2279 ms
+[30m2022-06-12 00:36:22,757[0;39m [31m[0;39m[33m WARN[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.context.support.AbstractApplicationContext[0;39m : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationController': Unsatisfied dependency expressed through field 'reservationService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationServiceImpl': Unsatisfied dependency expressed through field 'reservationRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reservationRepository' defined in com.example.demo.respositories.ReservationRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+[30m2022-06-12 00:36:22,762[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Stopping service [Tomcat]
+[30m2022-06-12 00:36:22,778[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener[0;39m : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[30m2022-06-12 00:36:22,804[0;39m [1;31m[0;39m[31mERROR[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.SpringApplication[0;39m : Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationController': Unsatisfied dependency expressed through field 'reservationService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationServiceImpl': Unsatisfied dependency expressed through field 'reservationRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reservationRepository' defined in com.example.demo.respositories.ReservationRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationServiceImpl': Unsatisfied dependency expressed through field 'reservationRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reservationRepository' defined in com.example.demo.respositories.ReservationRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reservationRepository' defined in com.example.demo.respositories.ReservationRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1434)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 52 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 62 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 76 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 90 common frames omitted
+Caused by: com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveAdditionalQueryParametersFromTxtRecords(DefaultDnsResolver.java:131)
+	at com.mongodb.ConnectionString.<init>(ConnectionString.java:381)
+	at org.springframework.boot.autoconfigure.mongo.MongoPropertiesClientSettingsBuilderCustomizer.applyHostAndPort(MongoPropertiesClientSettingsBuilderCustomizer.java:84)
+	at org.springframework.boot.autoconfigure.mongo.MongoPropertiesClientSettingsBuilderCustomizer.customize(MongoPropertiesClientSettingsBuilderCustomizer.java:54)
+	at org.springframework.boot.autoconfigure.mongo.MongoClientFactorySupport.customize(MongoClientFactorySupport.java:55)
+	at org.springframework.boot.autoconfigure.mongo.MongoClientFactorySupport.createMongoClient(MongoClientFactorySupport.java:49)
+	at org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration.mongo(MongoAutoConfiguration.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 91 common frames omitted
+Caused by: javax.naming.NameNotFoundException: DNS name not found [response code 3]
+	at com.sun.jndi.dns.DnsClient.checkResponseCode(DnsClient.java:660)
+	at com.sun.jndi.dns.DnsClient.isMatchResponse(DnsClient.java:578)
+	at com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:426)
+	at com.sun.jndi.dns.DnsClient.query(DnsClient.java:211)
+	at com.sun.jndi.dns.Resolver.query(Resolver.java:81)
+	at com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
+	at com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
+	at com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
+	at com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
+	at javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:142)
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveAdditionalQueryParametersFromTxtRecords(DefaultDnsResolver.java:114)
+	... 102 common frames omitted
+[30m2022-06-12 16:00:05,932[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.StartupInfoLogger[0;39m : Starting DemoApplication using Java 1.8.0_202 on DESKTOP-MFJBM3L with PID 13040 (C:\Users\werty\IdeaProjects\admin-server\target\classes started by werty in C:\Users\werty\IdeaProjects\admin-server)
+[30m2022-06-12 16:00:05,936[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.SpringApplication[0;39m : No active profile set, falling back to default profiles: default
+[30m2022-06-12 16:00:06,048[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.logging.DeferredLog[0;39m : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[30m2022-06-12 16:00:06,048[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.logging.DeferredLog[0;39m : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[30m2022-06-12 16:00:08,780[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[30m2022-06-12 16:00:08,955[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m : Finished Spring Data repository scanning in 161 ms. Found 1 MongoDB repository interfaces.
+[30m2022-06-12 16:00:10,461[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m : Tomcat initialized with port(s): 8080 (http)
+[30m2022-06-12 16:00:10,608[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Starting service [Tomcat]
+[30m2022-06-12 16:00:10,609[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Starting Servlet engine: [Apache Tomcat/9.0.50]
+[30m2022-06-12 16:00:10,770[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Initializing Spring embedded WebApplicationContext
+[30m2022-06-12 16:00:10,771[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m : Root WebApplicationContext: initialization completed in 4721 ms
+[30m2022-06-12 16:00:12,108[0;39m [31m[0;39m[33m WARN[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.context.support.AbstractApplicationContext[0;39m : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationController': Unsatisfied dependency expressed through field 'reservationService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationServiceImpl': Unsatisfied dependency expressed through field 'reservationRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reservationRepository' defined in com.example.demo.respositories.ReservationRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+[30m2022-06-12 16:00:12,121[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Stopping service [Tomcat]
+[30m2022-06-12 16:00:12,182[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener[0;39m : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[30m2022-06-12 16:00:12,270[0;39m [1;31m[0;39m[31mERROR[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.SpringApplication[0;39m : Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationController': Unsatisfied dependency expressed through field 'reservationService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationServiceImpl': Unsatisfied dependency expressed through field 'reservationRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reservationRepository' defined in com.example.demo.respositories.ReservationRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationServiceImpl': Unsatisfied dependency expressed through field 'reservationRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reservationRepository' defined in com.example.demo.respositories.ReservationRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reservationRepository' defined in com.example.demo.respositories.ReservationRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1434)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 52 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 62 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 76 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 90 common frames omitted
+Caused by: com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveAdditionalQueryParametersFromTxtRecords(DefaultDnsResolver.java:131)
+	at com.mongodb.ConnectionString.<init>(ConnectionString.java:381)
+	at org.springframework.boot.autoconfigure.mongo.MongoPropertiesClientSettingsBuilderCustomizer.applyHostAndPort(MongoPropertiesClientSettingsBuilderCustomizer.java:84)
+	at org.springframework.boot.autoconfigure.mongo.MongoPropertiesClientSettingsBuilderCustomizer.customize(MongoPropertiesClientSettingsBuilderCustomizer.java:54)
+	at org.springframework.boot.autoconfigure.mongo.MongoClientFactorySupport.customize(MongoClientFactorySupport.java:55)
+	at org.springframework.boot.autoconfigure.mongo.MongoClientFactorySupport.createMongoClient(MongoClientFactorySupport.java:49)
+	at org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration.mongo(MongoAutoConfiguration.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 91 common frames omitted
+Caused by: javax.naming.ConfigurationException: null
+	at com.sun.jndi.dns.DnsClient.getDatagramSocket(DnsClient.java:143)
+	at com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:399)
+	at com.sun.jndi.dns.DnsClient.query(DnsClient.java:211)
+	at com.sun.jndi.dns.Resolver.query(Resolver.java:81)
+	at com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
+	at com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
+	at com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
+	at com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
+	at javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:142)
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveAdditionalQueryParametersFromTxtRecords(DefaultDnsResolver.java:114)
+	... 102 common frames omitted
+Caused by: java.net.BindException: Address already in use: Cannot bind
+	at java.net.DualStackPlainDatagramSocketImpl.socketBind(Native Method)
+	at java.net.DualStackPlainDatagramSocketImpl.bind0(DualStackPlainDatagramSocketImpl.java:84)
+	at java.net.AbstractPlainDatagramSocketImpl.bind(AbstractPlainDatagramSocketImpl.java:93)
+	at java.net.DatagramSocket.bind(DatagramSocket.java:392)
+	at java.net.DatagramSocket.<init>(DatagramSocket.java:242)
+	at java.net.DatagramSocket.<init>(DatagramSocket.java:196)
+	at com.sun.jndi.dns.DNSDatagramSocketFactory.openDefault(DNSDatagramSocketFactory.java:204)
+	at com.sun.jndi.dns.DNSDatagramSocketFactory.open(DNSDatagramSocketFactory.java:147)
+	at com.sun.jndi.dns.DnsClient.getDatagramSocket(DnsClient.java:141)
+	... 111 common frames omitted
+[30m2022-06-12 16:00:53,873[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.StartupInfoLogger[0;39m : Starting DemoApplication using Java 1.8.0_202 on DESKTOP-MFJBM3L with PID 4232 (C:\Users\werty\IdeaProjects\admin-server\target\classes started by werty in C:\Users\werty\IdeaProjects\admin-server)
+[30m2022-06-12 16:00:53,881[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.SpringApplication[0;39m : No active profile set, falling back to default profiles: default
+[30m2022-06-12 16:00:53,985[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.logging.DeferredLog[0;39m : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[30m2022-06-12 16:00:53,985[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.logging.DeferredLog[0;39m : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[30m2022-06-12 16:00:56,118[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[30m2022-06-12 16:00:56,235[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m : Finished Spring Data repository scanning in 105 ms. Found 1 MongoDB repository interfaces.
+[30m2022-06-12 16:00:57,426[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m : Tomcat initialized with port(s): 8080 (http)
+[30m2022-06-12 16:00:57,449[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Starting service [Tomcat]
+[30m2022-06-12 16:00:57,450[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Starting Servlet engine: [Apache Tomcat/9.0.50]
+[30m2022-06-12 16:00:57,674[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Initializing Spring embedded WebApplicationContext
+[30m2022-06-12 16:00:57,675[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m : Root WebApplicationContext: initialization completed in 3689 ms
+[30m2022-06-12 16:00:58,654[0;39m [31m[0;39m[33m WARN[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.context.support.AbstractApplicationContext[0;39m : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationController': Unsatisfied dependency expressed through field 'reservationService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationServiceImpl': Unsatisfied dependency expressed through field 'reservationRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reservationRepository' defined in com.example.demo.respositories.ReservationRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+[30m2022-06-12 16:00:58,661[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Stopping service [Tomcat]
+[30m2022-06-12 16:00:58,683[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener[0;39m : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[30m2022-06-12 16:00:58,722[0;39m [1;31m[0;39m[31mERROR[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.SpringApplication[0;39m : Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationController': Unsatisfied dependency expressed through field 'reservationService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationServiceImpl': Unsatisfied dependency expressed through field 'reservationRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reservationRepository' defined in com.example.demo.respositories.ReservationRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reservationServiceImpl': Unsatisfied dependency expressed through field 'reservationRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reservationRepository' defined in com.example.demo.respositories.ReservationRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'reservationRepository' defined in com.example.demo.respositories.ReservationRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1434)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 52 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Unsatisfied dependency expressed through method 'mongoDatabaseFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 62 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongo' defined in class path resource [org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 76 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mongodb.client.MongoClient]: Factory method 'mongo' threw exception; nested exception is com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 90 common frames omitted
+Caused by: com.mongodb.MongoConfigurationException: Unable to look up TXT record for host cluster0.qkflv.mongodb.net
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveAdditionalQueryParametersFromTxtRecords(DefaultDnsResolver.java:131)
+	at com.mongodb.ConnectionString.<init>(ConnectionString.java:381)
+	at org.springframework.boot.autoconfigure.mongo.MongoPropertiesClientSettingsBuilderCustomizer.applyHostAndPort(MongoPropertiesClientSettingsBuilderCustomizer.java:84)
+	at org.springframework.boot.autoconfigure.mongo.MongoPropertiesClientSettingsBuilderCustomizer.customize(MongoPropertiesClientSettingsBuilderCustomizer.java:54)
+	at org.springframework.boot.autoconfigure.mongo.MongoClientFactorySupport.customize(MongoClientFactorySupport.java:55)
+	at org.springframework.boot.autoconfigure.mongo.MongoClientFactorySupport.createMongoClient(MongoClientFactorySupport.java:49)
+	at org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration.mongo(MongoAutoConfiguration.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 91 common frames omitted
+Caused by: javax.naming.ConfigurationException: null
+	at com.sun.jndi.dns.DnsClient.getDatagramSocket(DnsClient.java:143)
+	at com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:399)
+	at com.sun.jndi.dns.DnsClient.query(DnsClient.java:211)
+	at com.sun.jndi.dns.Resolver.query(Resolver.java:81)
+	at com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
+	at com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
+	at com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
+	at com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
+	at javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:142)
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveAdditionalQueryParametersFromTxtRecords(DefaultDnsResolver.java:114)
+	... 102 common frames omitted
+Caused by: java.net.BindException: Address already in use: Cannot bind
+	at java.net.DualStackPlainDatagramSocketImpl.socketBind(Native Method)
+	at java.net.DualStackPlainDatagramSocketImpl.bind0(DualStackPlainDatagramSocketImpl.java:84)
+	at java.net.AbstractPlainDatagramSocketImpl.bind(AbstractPlainDatagramSocketImpl.java:93)
+	at java.net.DatagramSocket.bind(DatagramSocket.java:392)
+	at java.net.DatagramSocket.<init>(DatagramSocket.java:242)
+	at java.net.DatagramSocket.<init>(DatagramSocket.java:196)
+	at com.sun.jndi.dns.DNSDatagramSocketFactory.openDefault(DNSDatagramSocketFactory.java:204)
+	at com.sun.jndi.dns.DNSDatagramSocketFactory.open(DNSDatagramSocketFactory.java:147)
+	at com.sun.jndi.dns.DnsClient.getDatagramSocket(DnsClient.java:141)
+	... 111 common frames omitted
+[30m2022-06-12 22:24:23,966[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.StartupInfoLogger[0;39m : Starting DemoApplication using Java 1.8.0_202 on DESKTOP-MFJBM3L with PID 8196 (C:\Users\werty\IdeaProjects\admin-server\target\classes started by werty in C:\Users\werty\IdeaProjects\admin-server)
+[30m2022-06-12 22:24:23,973[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.SpringApplication[0;39m : No active profile set, falling back to default profiles: default
+[30m2022-06-12 22:24:24,097[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.logging.DeferredLog[0;39m : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[30m2022-06-12 22:24:24,098[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.logging.DeferredLog[0;39m : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[30m2022-06-12 22:24:27,629[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[30m2022-06-12 22:24:27,783[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m : Finished Spring Data repository scanning in 140 ms. Found 1 MongoDB repository interfaces.
+[30m2022-06-12 22:24:29,838[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m : Tomcat initialized with port(s): 8080 (http)
+[30m2022-06-12 22:24:29,856[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Starting service [Tomcat]
+[30m2022-06-12 22:24:29,857[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Starting Servlet engine: [Apache Tomcat/9.0.50]
+[30m2022-06-12 22:24:29,993[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Initializing Spring embedded WebApplicationContext
+[30m2022-06-12 22:24:29,995[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m : Root WebApplicationContext: initialization completed in 5894 ms
+[30m2022-06-12 22:24:32,367[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.qkflv.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-fhc723-shard-0'}
+[30m2022-06-12 22:24:33,453[0;39m [34m[0;39m[32m INFO[0;39m [[34mcluster-ClusterId{value='62a65990a0514d1b1f5d082e', description='null'}-srv-cluster0.qkflv.mongodb.net[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Adding discovered server cluster0-shard-00-01.qkflv.mongodb.net:27017 to client view of cluster
+[30m2022-06-12 22:24:33,614[0;39m [34m[0;39m[32m INFO[0;39m [[34mcluster-ClusterId{value='62a65990a0514d1b1f5d082e', description='null'}-srv-cluster0.qkflv.mongodb.net[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Adding discovered server cluster0-shard-00-02.qkflv.mongodb.net:27017 to client view of cluster
+[30m2022-06-12 22:24:33,624[0;39m [34m[0;39m[32m INFO[0;39m [[34mcluster-ClusterId{value='62a65990a0514d1b1f5d082e', description='null'}-srv-cluster0.qkflv.mongodb.net[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Adding discovered server cluster0-shard-00-00.qkflv.mongodb.net:27017 to client view of cluster
+[30m2022-06-12 22:24:34,183[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer[0;39m : LiveReload server is running on port 35729
+[30m2022-06-12 22:24:38,808[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.actuate.endpoint.web.EndpointLinksResolver[0;39m : Exposing 1 endpoint(s) beneath base path '/actuator'
+[30m2022-06-12 22:24:41,382[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m : Tomcat started on port(s): 8080 (http) with context path ''
+[30m2022-06-12 22:24:42,198[0;39m [34m[0;39m[32m INFO[0;39m [[34mcluster-ClusterId{value='62a65990a0514d1b1f5d082e', description='null'}-cluster0-shard-00-00.qkflv.mongodb.net:27017[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Opened connection [connectionId{localValue:6, serverValue:760015}] to cluster0-shard-00-00.qkflv.mongodb.net:27017
+[30m2022-06-12 22:24:42,198[0;39m [34m[0;39m[32m INFO[0;39m [[34mcluster-ClusterId{value='62a65990a0514d1b1f5d082e', description='null'}-cluster0-shard-00-02.qkflv.mongodb.net:27017[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Opened connection [connectionId{localValue:5, serverValue:759278}] to cluster0-shard-00-02.qkflv.mongodb.net:27017
+[30m2022-06-12 22:24:42,198[0;39m [34m[0;39m[32m INFO[0;39m [[34mcluster-rtt-ClusterId{value='62a65990a0514d1b1f5d082e', description='null'}-cluster0-shard-00-02.qkflv.mongodb.net:27017[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Opened connection [connectionId{localValue:3, serverValue:759278}] to cluster0-shard-00-02.qkflv.mongodb.net:27017
+[30m2022-06-12 22:24:42,198[0;39m [34m[0;39m[32m INFO[0;39m [[34mcluster-rtt-ClusterId{value='62a65990a0514d1b1f5d082e', description='null'}-cluster0-shard-00-00.qkflv.mongodb.net:27017[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Opened connection [connectionId{localValue:2, serverValue:760015}] to cluster0-shard-00-00.qkflv.mongodb.net:27017
+[30m2022-06-12 22:24:42,201[0;39m [34m[0;39m[32m INFO[0;39m [[34mcluster-ClusterId{value='62a65990a0514d1b1f5d082e', description='null'}-cluster0-shard-00-00.qkflv.mongodb.net:27017[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-00.qkflv.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6508348600, setName='atlas-fhc723-shard-0', canonicalAddress=cluster0-shard-00-00.qkflv.mongodb.net:27017, hosts=[cluster0-shard-00-01.qkflv.mongodb.net:27017, cluster0-shard-00-02.qkflv.mongodb.net:27017, cluster0-shard-00-00.qkflv.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qkflv.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=628cd936ec4e4698ac21a003, counter=4}, lastWriteDate=Sun Jun 12 22:24:39 WET 2022, lastUpdateTimeNanos=393382423380900}
+[30m2022-06-12 22:24:42,201[0;39m [34m[0;39m[32m INFO[0;39m [[34mcluster-ClusterId{value='62a65990a0514d1b1f5d082e', description='null'}-cluster0-shard-00-01.qkflv.mongodb.net:27017[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Opened connection [connectionId{localValue:4, serverValue:774198}] to cluster0-shard-00-01.qkflv.mongodb.net:27017
+[30m2022-06-12 22:24:42,202[0;39m [34m[0;39m[32m INFO[0;39m [[34mcluster-ClusterId{value='62a65990a0514d1b1f5d082e', description='null'}-cluster0-shard-00-01.qkflv.mongodb.net:27017[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-01.qkflv.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6508475300, setName='atlas-fhc723-shard-0', canonicalAddress=cluster0-shard-00-01.qkflv.mongodb.net:27017, hosts=[cluster0-shard-00-01.qkflv.mongodb.net:27017, cluster0-shard-00-02.qkflv.mongodb.net:27017, cluster0-shard-00-00.qkflv.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qkflv.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000004b, setVersion=7, topologyVersion=TopologyVersion{processId=628cda52ce7dd4c679cdbae5, counter=6}, lastWriteDate=Sun Jun 12 22:24:39 WET 2022, lastUpdateTimeNanos=393382423381000}
+[30m2022-06-12 22:24:42,201[0;39m [34m[0;39m[32m INFO[0;39m [[34mcluster-rtt-ClusterId{value='62a65990a0514d1b1f5d082e', description='null'}-cluster0-shard-00-01.qkflv.mongodb.net:27017[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Opened connection [connectionId{localValue:1, serverValue:774198}] to cluster0-shard-00-01.qkflv.mongodb.net:27017
+[30m2022-06-12 22:24:42,201[0;39m [34m[0;39m[32m INFO[0;39m [[34mcluster-ClusterId{value='62a65990a0514d1b1f5d082e', description='null'}-cluster0-shard-00-02.qkflv.mongodb.net:27017[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-02.qkflv.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6508147600, setName='atlas-fhc723-shard-0', canonicalAddress=cluster0-shard-00-02.qkflv.mongodb.net:27017, hosts=[cluster0-shard-00-01.qkflv.mongodb.net:27017, cluster0-shard-00-02.qkflv.mongodb.net:27017, cluster0-shard-00-00.qkflv.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qkflv.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='EU_WEST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=628cdb0f2ba18434b9933ce4, counter=3}, lastWriteDate=Sun Jun 12 22:24:39 WET 2022, lastUpdateTimeNanos=393382423398800}
+[30m2022-06-12 22:24:42,207[0;39m [34m[0;39m[32m INFO[0;39m [[34mcluster-ClusterId{value='62a65990a0514d1b1f5d082e', description='null'}-cluster0-shard-00-01.qkflv.mongodb.net:27017[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Setting max election id to 7fffffff000000000000004b from replica set primary cluster0-shard-00-01.qkflv.mongodb.net:27017
+[30m2022-06-12 22:24:42,208[0;39m [34m[0;39m[32m INFO[0;39m [[34mcluster-ClusterId{value='62a65990a0514d1b1f5d082e', description='null'}-cluster0-shard-00-01.qkflv.mongodb.net:27017[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Setting max set version to 7 from replica set primary cluster0-shard-00-01.qkflv.mongodb.net:27017
+[30m2022-06-12 22:24:42,208[0;39m [34m[0;39m[32m INFO[0;39m [[34mcluster-ClusterId{value='62a65990a0514d1b1f5d082e', description='null'}-cluster0-shard-00-01.qkflv.mongodb.net:27017[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Discovered replica set primary cluster0-shard-00-01.qkflv.mongodb.net:27017
+[30m2022-06-12 22:24:42,226[0;39m [34m[0;39m[32m INFO[0;39m [[34mrestartedMain[0;39m] [33morg.springframework.boot.StartupInfoLogger[0;39m : Started DemoApplication in 20.201 seconds (JVM running for 25.052)
+[30m2022-06-12 22:24:44,310[0;39m [34m[0;39m[32m INFO[0;39m [[34mRMI TCP Connection(17)-192.168.43.193[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[30m2022-06-12 22:24:44,312[0;39m [34m[0;39m[32m INFO[0;39m [[34mRMI TCP Connection(17)-192.168.43.193[0;39m] [33morg.springframework.web.servlet.FrameworkServlet[0;39m : Initializing Servlet 'dispatcherServlet'
+[30m2022-06-12 22:24:44,315[0;39m [34m[0;39m[32m INFO[0;39m [[34mRMI TCP Connection(17)-192.168.43.193[0;39m] [33morg.springframework.web.servlet.FrameworkServlet[0;39m : Completed initialization in 3 ms
+[30m2022-06-12 22:24:45,826[0;39m [34m[0;39m[32m INFO[0;39m [[34mRMI TCP Connection(19)-192.168.43.193[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Opened connection [connectionId{localValue:7, serverValue:774150}] to cluster0-shard-00-01.qkflv.mongodb.net:27017
+[30m2022-06-12 22:25:18,289[0;39m [31m[0;39m[33m WARN[0;39m [[34mhttp-nio-8080-exec-1[0;39m] [33morg.springframework.web.servlet.handler.AbstractHandlerExceptionResolver[0;39m : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: (PushbackInputStream); line: 9, column: 2]]
+[30m2022-06-12 22:27:09,097[0;39m [34m[0;39m[32m INFO[0;39m [[34mhttp-nio-8080-exec-2[0;39m] [33mcom.example.demo.services.ReservationServiceImpl[0;39m : Reservation(id=62a65a2ca0514d1b1f5d082f, isDeleted=false, isAccepted=false, isEnabled=false, ownerId=null, entityId=null, spotIds=[], reservedFrom=null, reservedTo=null, createdAt=Sun Jun 12 22:27:08 WET 2022, deletedAt=Sun Jun 12 22:27:08 WET 2022)
+[30m2022-06-12 22:27:42,264[0;39m [31m[0;39m[33m WARN[0;39m [[34mhttp-nio-8080-exec-3[0;39m] [33morg.springframework.web.servlet.handler.AbstractHandlerExceptionResolver[0;39m : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: (PushbackInputStream); line: 9, column: 2]]
+[30m2022-06-12 22:29:35,777[0;39m [34m[0;39m[32m INFO[0;39m [[34mhttp-nio-8080-exec-4[0;39m] [33mcom.example.demo.services.ReservationServiceImpl[0;39m : Reservation(id=62a65abfa0514d1b1f5d0830, isDeleted=false, isAccepted=false, isEnabled=false, ownerId=null, entityId=null, spotIds=[], reservedFrom=null, reservedTo=null, createdAt=Sun Jun 12 22:29:35 WET 2022, deletedAt=Sun Jun 12 22:29:35 WET 2022)
+[30m2022-06-12 22:35:33,170[0;39m [34m[0;39m[32m INFO[0;39m [[34mhttp-nio-8080-exec-5[0;39m] [33mcom.example.demo.services.ReservationServiceImpl[0;39m : Reservation(id=62a65c25a0514d1b1f5d0831, isDeleted=false, isAccepted=false, isEnabled=false, ownerId=null, entityId=null, spotIds=[], reservedFrom=null, reservedTo=null, createdAt=Sun Jun 12 22:33:37 WET 2022, deletedAt=Sun Jun 12 22:33:37 WET 2022)
+[30m2022-06-12 22:35:34,478[0;39m [34m[0;39m[32m INFO[0;39m [[34mSpringApplicationShutdownHook[0;39m] [33mcom.mongodb.diagnostics.logging.SLF4JLogger[0;39m : Closed connection [connectionId{localValue:7, serverValue:774150}] to cluster0-shard-00-01.qkflv.mongodb.net:27017 because the pool has been closed.
